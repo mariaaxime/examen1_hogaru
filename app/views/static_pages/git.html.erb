@@ -1,2 +1,11 @@
-<h1>StaticPages#git</h1>
-<p>Find me in app/views/static_pages/git.html.erb</p>
+<% provide(:title, "Git") %>
+<h1>Git</h1>
+<p>Para inicializar un repositorio de git nuevo en una aplicación existente utilizamos <i>git init</i>.</p>
+<p>Para crear un branch nuevo utilizamos <i>git checkout -b branch-name</i>.</p>
+<p>Para realizar un commit incluyendo todos los cambios actuales utilizamos <i>git commit -a</i>.</p>
+<p>Para enviar el código al repositorio remoto utilizamos <i>git push</i>.</p>
+<p>Para configurar el origen del repositorio remoto utilizamos <i>git remote add origin <u>repository-url</u></i> y posteriormente <i>git push -u origin master</i>.</p>
+<p><i>git reset</i> deshace todos los cambios a los que aún no se les ha hecho commit, mientras que <i>git revert</i> hace un nuevo commit que elimina el último commit que se haya realizado.</p>
+<p>El comando <i>git checkout</i> se puede utilizar para deshacer cambios en un archivo específico agregando <i>-- file-name</i>.</p>
+<p>Para ver los commits realizados en un proyecto utilizamos <i>git log</i>.</p>
+<p>Si has modificado dos archivos y quieres hacer un commit por cada uno, inicialmente debes agregar el archivo a hacer commit utilizando <i>git add file1</i>, realizas el commit y repites el proceso para el siguiente archivo.</p>

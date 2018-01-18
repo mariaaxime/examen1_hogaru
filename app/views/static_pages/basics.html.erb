@@ -1,2 +1,53 @@
-<h1>StaticPages#basics</h1>
-<p>Find me in app/views/static_pages/basics.html.erb</p>
+<% provide(:title, "Basics") %>
+<h1>Basics</h1>
+<ul>
+  <li><strong>¿Qué es un resource en el contexto de una aplicación web REST en Ruby on Rails?</strong></li>
+  <p>Es un componente de la aplicación, que a su vez corresponde a la abstracción de algún elemento que se está modelando. Por ejemplo, un resource podría ser un usuario.</p>
+  <li><strong>¿Qué puede hacerse con un resource?</strong></li>
+  <p>Se pueden crear, leer, editar o eliminar.</p>
+  <li><strong>¿Qué es RESTful routing?</strong></li>
+  <p>Es un mapeo que se hace utilizando la URL en la que se encuentra el usuario y el método HTTP correspondiente a la petición para determinar cuál acción debería llevarse a cabo en el controlador.</p>
+  <ul>
+    <li><strong>¿Cuantas acciones básicas tiene esta filosofía?</strong></li>
+    <p>7</p>
+    <li><strong>¿Cuales son?</strong></li>
+    <p>index, show, create, new, edit, update y destroy.</p>
+    <li><strong>¿Cuales verbos HTTP se utilizan en cada una de ellas?</strong></li>
+    <p></p>
+    <table>
+      <tr>
+        <th>Acción</th>
+        <th>Verbo HTTP</th> 
+      </tr>
+      <tr>
+        <td>index</td>
+        <td>GET</td> 
+      </tr>
+      <tr>
+        <td>show</td>
+        <td>GET</td> 
+      </tr>
+      <tr>
+        <td>create</td>
+        <td>POST</td> 
+      </tr>
+      <tr>
+        <td>new</td>
+        <td>GET</td> 
+      </tr>
+      <tr>
+        <td>edit</td>
+        <td>GET</td> 
+      </tr>
+      <tr>
+        <td>update</td>
+        <td>PATCH</td> 
+      </tr>
+      <tr>
+        <td>destroy</td>
+        <td>DELETE</td> 
+      </tr>
+    </table>
+  </ul>
+
+</ul>
